@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   color: #222;
@@ -10,8 +13,19 @@ h1, h2, h3, h4, h5{
 h1 {font-size: 1.7rem;}
 h2 {font-size: 1.5rem;}
 .main-container {
-  padding-top: 30px;
+  width: 100%;
+  padding: 50px 15px 25px;
   background-color: #0392cf;
+  color: #fff;
+}
+a {
+  color: #0392cf;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+a:hover {
+  color: #0481b6;
 }
 .site-title {
   text-align: center;
@@ -21,13 +35,14 @@ h2 {font-size: 1.5rem;}
   text-align: center;
   font-size: 0.97rem;
   margin-top: 0;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.85);
 }
 .quote-container {
   border-radius: 4px;
   padding: 10px;
   margin-top: 50px;
   background-color: #fff;  
+  color: #222;
 }
 .quote-content {
   text-align: justify;
@@ -46,17 +61,33 @@ h2 {font-size: 1.5rem;}
 }
 .btn-wrapper a {
   padding: 10px;
-  color: #ccc;
-  background-color: #222;
+  color: #222;
+  background-color: #fff;
   margin: 0.1rem;
+  border-radius: 4px;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn-wrapper a:hover {
+  background-color: #fdf498;
 }
 .btn-newquote {
   float: right;
 }
 .btn-newquote span{
   padding: 10px;
-  color: #ccc;
-  background-color: #222;
+  color: #222;
+  background-color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-newquote span:hover{
+  background-color: #fdf498;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 footer {
   position: fixed;
@@ -66,7 +97,7 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   color: #fff;
-  background-color: #222;
+  background-color: #0b1420;
   width: 100%;
 }
 .fb-comments {
@@ -74,7 +105,10 @@ footer {
   padding: 10px;
   text-align: center;
 }
-.fb-comment-wrapper {margin-bottom: 50px;}
+.fb-comment-wrapper {
+  padding: 15px;
+  margin-bottom: 50px;
+}
 @media (min-width: 576px) {
   h1 {font-size: 2.2rem;}
   .site-description {font-size: 1.1rem;}
@@ -84,7 +118,7 @@ footer {
 @media (min-width: 768px) { 
   h1 {font-size: 3.2rem;}
   .main-container{padding: 35px 60px;}
-  .quote-container{ padding: 0px 30px;}
+  .quote-container{ padding: 30px;}
   .fb-comment-wrapper{padding: 50px;}
   .site-description {font-size: 1.5rem;}
   .quote-content{font-size: 1.5rem;}
@@ -107,6 +141,13 @@ footer {
     width: 100%;
   }
   .main-container, footer{width: calc(100% - 400px);}
+  .main-container{
+    padding: 35px 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
