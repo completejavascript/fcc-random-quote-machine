@@ -1,2 +1,2 @@
-# fcc-random-qoute-machine
-A freeCodeCamp project - Build a Random Qoute Machine
+# fcc-random-quote-machine
+A freeCodeCamp project - Build a Random Quote Machine
