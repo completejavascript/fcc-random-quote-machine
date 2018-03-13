@@ -101,11 +101,10 @@ footer {
   width: 100%;
 }
 .fb-comments {
-  padding: 10px;
+  margin: 15px;
   text-align: center;
 }
 .fb-comment-wrapper {
-  padding: 15px;
   margin-bottom: 50px;
 }
 @media (min-width: 576px) {
@@ -118,7 +117,7 @@ footer {
   h1 {font-size: 3.2rem;}
   .main-container{padding: 35px 60px;}
   .quote-container{ padding: 30px;}
-  .fb-comment-wrapper{padding: 50px;}
+  .fb-comments{margin: 50px;}
   .site-description {font-size: 1.5rem;}
   .quote-content{font-size: 1.5rem;}
   .quote-container {margin-bottom: 30px}
@@ -126,7 +125,6 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .fb-comment-wrapper{
-    padding: 0;
     height: 100%;
     position: fixed;
     top: 0;
@@ -136,6 +134,7 @@ footer {
     width: 400px;
   }
   .fb-comments{
+    margin: 15px;
     height: 100%;
     width: 100%;
   }
