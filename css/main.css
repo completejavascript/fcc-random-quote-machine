@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  color: #222;
+  font: normal normal normal 1rem/1.6 Nunito Sans, Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5{
+  line-height: 1.2;
+  font-weight: 700;
+}
+h1 {font-size: 1.7rem;}
+h2 {font-size: 1.5rem;}
+.main-container {
+  padding-top: 30px;
+  background-color: #0392cf;
+}
+.site-title {
+  text-align: center;
+  color: #fff;
+}
+.site-description {
+  text-align: center;
+  font-size: 0.97rem;
+  margin-top: 0;
+  color: #fff;
+}
+.quote-container {
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 50px;
+  background-color: #fff;  
+}
+.quote-content {
+  text-align: justify;
+}
+#quote-left {
+  color: #222;
+  font-size: 1.0rem;
+  display: inline-block;
+}
+.quote-author {
+  text-align: right;
+  margin: 2px;
+}
+.btn-wrapper {
+  margin: 20px 0px 15px;
+}
+.btn-wrapper a {
+  padding: 10px;
+  color: #ccc;
+  background-color: #222;
+  margin: 0.1rem;
+}
+.btn-newquote {
+  float: right;
+}
+.btn-newquote span{
+  padding: 10px;
+  color: #ccc;
+  background-color: #222;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 2px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #222;
+  width: 100%;
+}
+.fb-comments {
+  border: 2px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.fb-comment-wrapper {margin-bottom: 50px;}
+@media (min-width: 576px) {
+  h1 {font-size: 2.2rem;}
+  .site-description {font-size: 1.1rem;}
+  .main-container{padding-top: 35px;}
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  h1 {font-size: 3.2rem;}
+  .main-container{padding: 35px 60px;}
+  .quote-container{ padding: 0px 30px;}
+  .fb-comment-wrapper{padding: 50px;}
+  .site-description {font-size: 1.5rem;}
+  .quote-content{font-size: 1.5rem;}
+  .quote-container {margin-bottom: 30px}
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .fb-comment-wrapper{
+    padding: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    width: 400px;
+  }
+  .fb-comments{
+    height: 100%;
+    width: 100%;
+  }
+  .main-container, footer{width: calc(100% - 400px);}
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
