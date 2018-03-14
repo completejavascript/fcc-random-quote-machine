@@ -8,15 +8,16 @@ $(document).ready(function(){
 
   function requestRandomQoute() {
     $.getJSON(requestURL, function(data) {
-      animateText("#qoute-text", data.quoteText);
-      animateText("#qoute-name", data.quoteAuthor);
+      animateText("#quote-text", data.quoteText);
+      animateText("#quote-name", data.quoteAuthor);
+      animateText("#quote-symbol", "");
     });
   }
 
   function animateText(element, content) {
     $(element).animate({opacity: 0}, 500, function() {
       $(this).animate({opacity: 1}, 500);
-      $(this).text(content);
+      if(content != "") $(this).text(content);
     });
   }
 });
