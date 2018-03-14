@@ -31,11 +31,15 @@ header a:hover {color: rgb(255, 255, 255);}
   width: 100%;
   padding: 50px 15px 25px;
   background-color: #0392cf;
+  margin-bottom: 35px;
 }
 .main-text{color:#fff;}
-.site-title {color: #fff;}
+.site-title {
+  color: #fff;
+  margin-bottom: 10px;
+}
 .site-description {
-  font-size: 0.97rem;
+  font-size: 0.9rem;
   margin-top: 0;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -105,17 +109,19 @@ footer a:hover {color: #0481b6;}
 @media (min-width: 576px) {
   h1 {font-size: 2.2rem;}
   .site-description {font-size: 1.1rem;}
-  .main-container{padding-top: 35px;}
+  .main-container{padding-top: 30px;}
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   h1 {font-size: 3.2rem;}
-  .main-container{padding: 35px 60px;}
-  .quote-container{ padding: 30px;}
+  .main-container{padding: 30px 60px;}
   .fb-comment-wrapper{padding: 50px;}
-  .site-description {font-size: 1.5rem;}
+  .site-description {font-size: 1.1rem;}
   .quote-content{font-size: 1.5rem;}
-  .quote-container {margin-bottom: 30px}
+  .quote-container {
+    margin-bottom: 30px;
+    padding: 20px 25px;
+  }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -135,7 +141,7 @@ footer a:hover {color: #0481b6;}
   }
   .main-container, footer{width: calc(100% - 400px);}
   .main-container{
-    padding: 35px 60px;
+    padding: 30px 60px;
     position: fixed;
     left: 0;
     top: 0;
@@ -144,6 +150,6 @@ footer a:hover {color: #0481b6;}
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  .main-container{padding: 35px 160px;}
-  .quote-container{ margin-top: 100px;}
+  .main-container{padding: 30px 160px;}
+  .quote-container{ margin-top: 80px;}
 }
