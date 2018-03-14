@@ -27,6 +27,16 @@ a {
 a:hover {
   color: #0481b6;
 }
+.my-transition {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.my-box-shadow{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 .site-title {
   text-align: center;
   color: #fff;
@@ -43,6 +53,11 @@ a:hover {
   margin-top: 50px;
   background-color: #fff;  
   color: #222;
+}
+.quote-container:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
 }
 .quote-content {
   text-align: justify;
@@ -66,9 +81,6 @@ a:hover {
   background-color: #fff;
   margin: 0.1rem;
   border-radius: 4px;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
 }
 .btn-wrapper a:hover {
   background-color: #fdf498;
@@ -86,9 +98,6 @@ a:hover {
 }
 .btn-newquote span:hover{
   background-color: #fdf498;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
 }
 footer {
   position: fixed;
@@ -101,11 +110,9 @@ footer {
   background-color: #0b1420;
   width: 100%;
 }
-.fb-comments {
-  margin: 15px;
-  text-align: center;
-}
+.fb-comments {text-align: center;}
 .fb-comment-wrapper {
+  padding: 15px;
   margin-bottom: 50px;
 }
 @media (min-width: 576px) {
@@ -118,7 +125,7 @@ footer {
   h1 {font-size: 3.2rem;}
   .main-container{padding: 35px 60px;}
   .quote-container{ padding: 30px;}
-  .fb-comments{margin: 50px;}
+  .fb-comment-wrapper{padding: 50px;}
   .site-description {font-size: 1.5rem;}
   .quote-content{font-size: 1.5rem;}
   .quote-container {margin-bottom: 30px}
@@ -133,9 +140,9 @@ footer {
     z-index: 1000;
     background-color: #fff;
     width: 400px;
+    padding: 15px;
   }
   .fb-comments{
-    margin: 15px;
     height: 100%;
     width: 100%;
   }
@@ -150,5 +157,6 @@ footer {
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-
+  .main-container{padding: 35px 160px;}
+  .quote-container{ margin-top: 100px;}
 }
