@@ -32,6 +32,7 @@ header a:hover {color: rgb(255, 255, 255);}
   padding: 50px 15px 25px;
   background-color: #0392cf;
 }
+.main-text{color:#fff;}
 .site-title {color: #fff;}
 .site-description {
   font-size: 0.97rem;
