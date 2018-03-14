@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="A basic front-end project on freeCodeCamp - build a random quote machine.">
-  <meta name="keywords" content="random quote machine, quote machine, fcc, freecodecamp, lampham, completejavascript">
+  <meta name="keywords" content="random quote machine, quote machine, fcc, freecodecamp, lam pham, completejavascript">
 
-  <title>[FCC] Build a Random quote Machine - Lam Pham</title>
+  <title>[FCC] Random quote Machine - Lam Pham</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -26,7 +26,7 @@
   <div class="main-container">
     <header>
       <h1 class="site-title">Random Quote Machine</h1>
-      <p class="site-description">Welcome! Enjoy these cool random quotes, </p>
+      <p class="site-description">Welcome! Enjoy these cool random quotes below - using the <a href="https://forismatic.com/en/api/">Forismatic API</a>.</p>
     </header>
     <section class="quote-container my-box-shadow my-transition">
       <p class="quote-content">
@@ -34,16 +34,14 @@
         <span id="quote-text">Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it.</span>
       </p>
       <p class="quote-author">
-        -- <span id="quote-name">Bruce Lee</span>
+        <span id="quote-name">-- Bruce Lee</span>
       </p>
     </section>
     <section class="btn-wrapper">
       <span>Share: </span>
-      <a href="javascript:void(0);" class="my-box-shadow"><i class="fa fa-twitter"></i></a>
-      <a href="javascript:void(0);" class="my-box-shadow"><i class="fa fa-linkedin"></i></a>
-      <a href="javascript:void(0);" class="my-box-shadow"><i class="fa fa-facebook"></i></a>
-      <a href="javascript:void(0);" class="my-box-shadow"><i class="fa fa-google-plus"></i></a>
-      <div class="btn-newquote my-box-shadow">
+      <a href="javascript:void(0);" target="_blank" class="my-box-shadow my-btn btn-share" id="share-twitter"><i class="fa fa-twitter"></i></a>
+      <a href="javascript:void(0);" target="_blank" class="my-box-shadow my-btn btn-share" id="share-tumblr"><i class="fa fa-tumblr"></i></a>
+      <div class="my-btn btn-newquote my-box-shadow">
         <span class="my-transition">New quote</span>
       </div>
     </section>
