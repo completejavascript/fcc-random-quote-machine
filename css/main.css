@@ -84,10 +84,10 @@ header a:hover {color: rgb(255, 255, 255);}
 .btn-newquote {float: right;}
 .btn-newquote span{
   width: 100px;
-  background-color: #fff;
+  /* background-color: #fff; */
   font-weight: 550;
 }
-.btn-newquote span:hover{background-color: #fdf498;}
+.btn-newquote:hover{background-color: #fdf498;}
 footer {
   position: fixed;
   left: 0;
